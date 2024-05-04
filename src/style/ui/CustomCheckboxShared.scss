@@ -1,0 +1,25 @@
+.custom-checkbox-shared {
+  display: flex;
+  gap: 0.5rem;
+
+  position: relative;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &__input {
+    display: none;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    transition: background-color 150ms linear;
+  }
+
+  &:hover &__icon {
+    background-color: lightgray;
+  }
+}
